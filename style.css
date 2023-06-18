@@ -115,7 +115,148 @@ span,p{
   cursor: pointer;
   display: none;
 }
+
+/* -------Services Section------- */
+.services{
+  padding: 100px;
+  background-color: hsl(220, 16%, 96%);
+}
+.services h2,.articles h2{
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+.service-type{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1.2rem;
+  margin-top: 4rem;
+}
+.service-type img{
+  margin-bottom: 1.5rem;
+}
+.service-type h3{
+  margin-bottom: 2rem;
+  font-weight: normal;
+}
+.services p,.service-type p,.card-body p{
+  font-size: 1rem;
+}
+
+/* -------Latest Articles Section------- */
+.articles{
+  padding: 100px;
+  background-color: hsl(0, 0%, 98%);
+}
+.article-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  column-gap: 1rem;
+}
+.card{
+  display: flex;
+  flex-direction: column;
+  max-width: 15.5rem;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 0 0 10px 10px;
+} 
+.card img{
+  width: 100%;
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+.card-body{
+  display: flex;
+  flex-direction: column;
+  padding: 25px 20px;
+  gap: 0.7rem;
+}
+.card-body span{
+  font-size: 0.9rem;
+}
+.card-body h3{
+  font-weight: normal;
+  font-size: 1.2rem;
+  cursor:pointer;
+  transition: color 0.3s;
+}
+.card-body h3:hover{
+  color:hsl(136, 65%, 51%);
+}
+/* -------Footer Section------- */
+footer{
+  padding: 50px 100px;
+  background-color: hsl(233, 26%, 24%);
+  display: grid;
+  grid-template-columns: 1fr 300px;
+}
+.links{
+  display:grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  align-items: center;
+  gap: 5rem;
+}
+.social-links{
+  display: grid;
+  gap: 3.5rem;
+}
+.medias a{
+  padding-right: 3px;
+}
+.links ul{
+  list-style: none;
+  display: grid;
+  gap: 1rem;
+}
+.links ul li{
+  font-size: 1rem;
+}
+.links ul li a{
+  color: #fff;
+  transition: color 0.3s;
+}
+.links ul li a:hover{
+  color:hsl(136, 65%, 51%);
+}
+.footer-right{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+.footer-right button{
+  margin: 0;
+  align-self: flex-end;
+  transition: all 0.3s;
+}
+.footer-right button:hover{
+  cursor: pointer;
+  opacity: 0.6;
+}
+.footer-right p{
+  align-self: flex-end;
+  font-size: 1rem;
+}
 /* Media Query */
+@media screen and (max-width:991px) {
+  .service-type{
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+  }
+  .article-cards{
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+  .card{
+    max-width: 100%;
+  }
+  footer{
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}
+
 @media screen and (max-width:768px) {
   .header{
     padding: 1.3rem;
@@ -199,4 +340,44 @@ span,p{
   .brief_details .request_invite_btn{
    margin: auto;
   }
+  .services{
+    text-align: center;
+  }
+  .service-type{
+    grid-template-columns: 1fr;
+  }
+  .articles h2{
+    text-align:center;
+  }
+  .article-cards{
+    grid-template-columns: 1fr;
+  }
+  .card{
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  footer{
+    justify-items: center;
+  }
+  .social-links{
+    justify-items: center;
+    gap:2.5rem;
+  }
+  .medias a img{
+    width:30px;
+    height:30px;
+    margin-bottom:2rem;
+  }
+  .links{
+    grid-template-columns: 1fr;
+    gap:1rem;
+    justify-items: center;
+  }
+  .links ul{
+    justify-items: center;
+  }
+  .footer-right button{
+    align-self: center;
+  }
 }
+
