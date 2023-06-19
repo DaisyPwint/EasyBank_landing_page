@@ -183,6 +183,7 @@ span,p{
 .card-body h3:hover{
   color:hsl(136, 65%, 51%);
 }
+
 /* -------Footer Section------- */
 footer{
   padding: 50px 100px;
@@ -220,8 +221,8 @@ footer{
 }
 .footer-right{
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5rem;
 }
 .footer-right button{
@@ -245,8 +246,8 @@ footer{
   }
   .article-cards{
     grid-template-columns: 1fr 1fr;
-    column-gap: 20px;
     row-gap: 30px;
+    column-gap: 20px;
   }
   .card{
     max-width: 100%;
