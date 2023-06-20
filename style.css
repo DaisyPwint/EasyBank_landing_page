@@ -330,9 +330,9 @@ footer{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    z-index: -99999;
-    height: 50vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 1;
+    height: 100%;
     
   }
   .details{
@@ -363,7 +363,10 @@ footer{
     transform: translate(0%);
     text-align: center;
     z-index: 1;
-    margin-top: -30px;
+   
+  }
+  .mockups-bg{
+    transition: all .5s ease-in-out;
   }
   .brief_details h1{
     font-size: 3rem;
